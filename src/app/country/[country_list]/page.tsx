@@ -50,9 +50,9 @@ capital : "London"
 function countryfind( country_url : string){
 return countries.find(country=> country.name.toLowerCase() === country_url)
 }
-let result = countryfind(params.country_list)
+const result = countryfind(params.country_list)
     return (
-  <div className=" bg-green-300 text-gray   p-6 flex flex-col justify-center items-center mt-8 gap-3 border-x-red-600">
+  <div className=" bg-green-300 text-gray   p-6 flex flex-col justify-center items-center mt-8 gap-3">
     {result? (
       <>
           <h1>Country Name: {result.name}</h1>
